@@ -1,0 +1,30 @@
+.backgroundColorNav {
+    background-color: black;
+    color:whitesmoke;
+}
+
+.textNav {
+    color: whitesmoke !important;
+    font-size: medium;
+}
+
+.navBrandText {
+    color: whitesmoke !important;
+    font-size: larger;
+    font-weight: bold;
+}
+
+.nav-item {
+    padding: 0px 10px;
+}
+
+.button {
+    color: whitesmoke;
+    border-color: whitesmoke;
+}
+
+.button:hover {
+    color: black;
+    background-color: whitesmoke;
+    border-color: black;
+}
