@@ -28,3 +28,24 @@
     background-color: whitesmoke;
     border-color: black;
 }
+
+.heightFull {
+    padding-top: 93px;
+}
+
+.sectionOne {
+    padding-top: 500px;
+    background-color: rgb(241, 241, 241);
+}
+
+.titleSectionOne {
+    color: black;
+    font-size: 50px;
+    font-weight: 600px;
+}
+
+.card{
+    width: 18rem;
+    margin: 0px 0px 0px 380px;
+    padding: 0px;
+}
