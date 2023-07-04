@@ -73,15 +73,31 @@
         </div>
       </nav>
       <section class="heightFull sectionOne">
-        <p></p>
-      </section>
+          <img src="/assets/images/Logo.png" alt="Imagem" id="imagem" onclick="moverImagem()">
+          <div class="texto-escondido" id="texto">
+            <p>Olá! Sou Daniel, e é um prazer recebê-lo em meu site. Tenho 20 anos e desde 2020 tenho me dedicado ao estudo e prática na área de programação. Foi nesse ano, marcado pelo isolamento causado pela pandemia, que busquei novas formas de me entreter e mergulhei ainda mais na minha paixão pela computação e tecnologia em geral. Desde os meus 6 anos, quando comecei a usar computadores e jogar meus primeiros jogos, esse mundo tem sido meu maior hobby.</p>
+          
+            <p>Ao longo dessa jornada, iniciei diversos projetos, incluindo a criação de jogos, sites, aplicativos e muito mais. Atualmente, estou cursando Ciência da Computação, o que me proporciona um amplo conhecimento e me prepara para atuar em diversas áreas.</p>
+          
+            <p>Em 2023, participei de uma GameJam, minha primeira experiência em competições relacionadas à programação. Durante essa competição, pude sentir a pressão dos prazos e a necessidade de explorar novas áreas, como modelagem 3D, adição de efeitos sonoros, sincronização de animações com scripts e exportação de jogos. Essa experiência ampliou meus horizontes e me permitiu adquirir conhecimentos valiosos.</p>
+          
+            <p>Além da minha vida acadêmica, sou morador da cidade de São Paulo, capital. Tenho fluência em inglês e português (Brasil). Possuo amplo conhecimento em diversas áreas, como Photoshop, Premiere Pro, C#, JavaScript, Blender, Unity, GameMaker, entre outros.</p>
+          
+            <p>Minha ambição é adquirir conhecimentos em diversas áreas da tecnologia, com foco especial na programação. No entanto, também tenho interesse em explorar a área da robótica.</p>
+          
+            <p>Meu principal interesse profissional está no desenvolvimento de projetos e automações. Tenho paixão por essas áreas e estou sempre em busca de desafios empolgantes.</p>
+          
+            <p>Espero que aproveite este site tanto quanto eu me diverti criando-o. Se houver interesse em colaborar ou se tiver qualquer dúvida, não hesite em entrar em contato! Estou disponível para ajudar e discutir qualquer assunto em que eu possa contribuir.</p>
+          
+      </section>  
+      
       <section>
         <div class="row", style="width: fit-content;">
           <div class="card">
             <img src="./assets/images/Projeto_Enigma.png" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Twitch Minigames</h5>
-              <p class="card-text">Um dos projetos mais divertidos e ao mesmo tempo mais inspiradores de se fazer.</p>
+              <p class="card-text">Utilizando uma base de dados pré-definida, o bot seleciona um enigma aleatório e o apresenta aos espectadores, desafiando-os a encontrar a solução correta. Os espectadores podem responder aos enigmas diretamente no chat, e o bot verifica se a resposta está correta, concedendo recompensas aos jogadores que acertarem. Essas recompensas podem variar desde pontos no canal até prêmios personalizados, como destaque no chat ou até mesmo brindes especiais.</p>
               <a href="#" class="btn btn-primary">Mais sobre...</a>
             </div>
           </div>
@@ -89,7 +105,7 @@
             <img src="./assets/images/GameJam-Aurora.png" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">GameJam-Aurora</h5>
-              <p class="card-text"></p>
+              <p class="card-text">Primeira GameJam em que participei, independente de termos ganho, a quantidade de aprendizado e novas funções que tive que aprender foram imensas.</p>
               <a href="#" class="btn btn-primary">Mais sobre...</a>
             </div>
           </div>
@@ -97,7 +113,7 @@
             <img src="./assets/images/GPT_Bot_2.png" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Discord chatbot com GPT</h5>
-              <p class="card-text"></p>
+              <p class="card-text">Algo que se tornou incrivelmente util para mim e meu ciclo de amizades, porém a API tem seus limites de uso, o que acabou por interromper parcialmente o andamento do projeto.</p>
               <a href="#" class="btn btn-primary">Mais sobre...</a>
             </div>
           </div>
@@ -108,25 +124,22 @@
     
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
       <script>
-        var repoOwner = "DPoveaa"; // nome do proprietário do repositório
-        var repoName = "DPoveaa.github.io"; // nome do repositório
-    
-        var lastUpdatedElement = document.getElementById("last-updated");
-    
-        // Faz a requisição para a GitHub API
-        fetch("https://api.github.com/repos/" + repoOwner + "/" + repoName)
-          .then(response => response.json())
-          .then(data => {
-            // Obtém a data de atualização do objeto de resposta
-            var lastUpdated = new Date(data.updated_at);
-    
-            // Atualiza o conteúdo do elemento com a data formatada
-            lastUpdatedElement.textContent = "Atualizado em: " + lastUpdated.toLocaleString();
-          })
-          .catch(error => {
-            console.error(error);
-            lastUpdatedElement.textContent = "Erro ao obter a data de atualização";
-          });
+var imagem = document.getElementById("imagem");
+var texto = document.getElementById("texto");
+var imagemGirada = false;
+
+function moverImagem() {
+  if (!imagemGirada) {
+    imagem.style.transform = "translate(150%, -50%) rotate(360deg)";
+    texto.style.transform = "translate(20%, -50%)";
+    imagemGirada = true;
+  } else {
+    imagem.style.transform = "translate(-50%, -50%)";
+    texto.style.transform = "translate(-100%, -50%)";
+    imagemGirada = false;
+  }
+}
       </script>
+      
     </body>
 </html>

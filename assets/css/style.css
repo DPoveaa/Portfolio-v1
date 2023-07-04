@@ -29,15 +29,6 @@
     border-color: black;
 }
 
-.heightFull {
-    padding-top: 93px;
-}
-
-.sectionOne {
-    padding-top: 450px;
-    background-color: rgb(241, 241, 241);
-}
-
 .titleSectionOne {
     color: black;
     font-size: 50px;
@@ -48,9 +39,13 @@
     height: 10em;
 }
 
-.card-text{
-    height: 4rem;
-}
+.card-text {
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* Define o número máximo de linhas que deseja exibir */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  
 
 .card{
     width: 18rem;
@@ -59,3 +54,37 @@
     border-radius: 10px;
     border-width: 8px;
 }
+
+/***/
+.heightFull {
+    padding-top: 93px;
+    height: 500px;
+  }
+  
+  .sectionOne {
+    padding-top: 450px;
+    background-color: rgb(241, 241, 241);
+    position: relative;
+  }
+  
+  #imagem {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    width: 300px; /* Ajuste o valor conforme necessário */
+    height: auto; /* Ajuste para manter a proporção da imagem */
+    transition: transform 1.5s ease;
+    z-index: 2;
+  } 
+  
+  #texto {
+    position: absolute;
+    top: 50%;
+    transform: translate(-100%, -50%);
+    transition: transform 1.5s ease;
+    z-index: 1; /* Ajuste o z-index para garantir que o texto fique abaixo da imagem */
+    width: 60%; /* Ajuste a largura do texto conforme necessário */
+  }
+
