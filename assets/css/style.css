@@ -4,18 +4,29 @@
 }
 
 .textNav {
-    color: whitesmoke !important;
+    color: whitesmoke;
     font-size: medium;
 }
 
 .navBrandText {
-    color: whitesmoke !important;
+    color: whitesmoke;
     font-size: larger;
     font-weight: bold;
 }
+.nav-link.textNav:focus {
+    color: whitesmoke
+  }
 
 .nav-item {
     padding: 0px 10px;
+}
+
+.nav-link.textNav:hover {
+    color: grey;
+}
+
+.nav-link.dropdown-toggle.textNav:hover{
+    color: grey;
 }
 
 .button {
@@ -62,8 +73,8 @@
   }
   
   .sectionOne {
-    padding-top: 450px;
-    background-color: rgb(241, 241, 241);
+    padding-top: 500px;
+    background-color: grey;
     position: relative;
   }
   
@@ -73,18 +84,32 @@
     left: 50%;
     transform: translate(-50%, -50%);
     cursor: pointer;
-    width: 300px; /* Ajuste o valor conforme necessário */
+    width: 350px; /* Ajuste o valor conforme necessário */
     height: auto; /* Ajuste para manter a proporção da imagem */
-    transition: transform 1.5s ease;
+    transition: opacity 0.5s ease,transform 1.5s ease;
     z-index: 2;
   } 
   
+#imagem:hover {
+  opacity: 0.8;
+}
+
   #texto {
+    opacity: 0;
+    background-color: rgb(110, 110, 110);
+    border-radius: 10px;
+    font-size: 92%;
+    word-wrap: break-word;
+    color: whitesmoke;
     position: absolute;
     top: 50%;
     transform: translate(-100%, -50%);
-    transition: transform 1.5s ease;
+    transition-property: transform, opacity;
+    transition-duration: 1.5s, 1s;
+    transition-timing-function: ease, ease;
     z-index: 1; /* Ajuste o z-index para garantir que o texto fique abaixo da imagem */
-    width: 60%; /* Ajuste a largura do texto conforme necessário */
+    max-width: 60%;
+    max-height: 95%;
+    padding: 15px;
   }
 

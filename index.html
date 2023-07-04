@@ -30,7 +30,7 @@
                 <a class="nav-link textNav" href="#">Portfólio</a>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle textNav" style="color: whitesmoke"  href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <a class="nav-link dropdown-toggle textNav"  href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Contato
                 </a>
                 <ul class="dropdown-menu">
@@ -132,13 +132,21 @@ function moverImagem() {
   if (!imagemGirada) {
     imagem.style.transform = "translate(150%, -50%) rotate(360deg)";
     texto.style.transform = "translate(20%, -50%)";
+    texto.style.transitionProperty = "transform, opacity";
+    texto.style.transitionDuration = "1.1s,1.5s";
     imagemGirada = true;
+    texto.style.opacity = "1"; // Valor de opacidade desejado
   } else {
     imagem.style.transform = "translate(-50%, -50%)";
-    texto.style.transform = "translate(-100%, -50%)";
+    texto.style.transform = "translate(-80%, -50%)";
     imagemGirada = false;
+    texto.style.transitionProperty = "transform, opacity";
+    texto.style.transitionDelay = "0.07s, 0.1s"
+    texto.style.opacity = "0"; // Valor de opacidade desejado
   }
 }
+
+
       </script>
       
     </body>
