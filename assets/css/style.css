@@ -76,16 +76,16 @@
 
 .card-body{
   background-color: rgb(90, 90, 90);
-  border-radius: 0px 0px 6px 6px;
+  border-radius: 0% 0% 5% 5%;
 }
 
 .heightFull {
-    padding-top: 93px;
-    height: 700px;
+    padding-top: 93%;
+    height: 700%;
   }
   
   .sectionOne {
-    padding-top: 500px;
+    padding-top: 30%;
     background-color: grey;
     position: relative;
     border-bottom: 4px groove black;
@@ -97,7 +97,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     cursor: pointer;
-    width: 500px; /* Ajuste o valor conforme necessário */
+    width: 15%; /* Ajuste o valor conforme necessário */
     height: auto; /* Ajuste para manter a proporção da imagem */
     transition: opacity 0.5s ease,transform 1.1s ease;
     z-index: 2;
@@ -107,11 +107,11 @@
   opacity: 0.8;
 }
 
-  #texto {
+  #hiddenText {
     opacity: 0;
     background-color: rgb(110, 110, 110);
-    border-radius: 10px;
-    font-size: large;
+    border-radius: 3%;
+    font-size: 95%;
     word-wrap: break-word;
     color: whitesmoke;
     position: absolute;
@@ -123,7 +123,7 @@
     z-index: 1; /* Ajuste o z-index para garantir que o texto fique abaixo da imagem */
     max-width: 60%;
     height: 90%;
-    padding: 20px;
+    padding: 1%;
   }
 
 .btn.btn-primary{
@@ -148,7 +148,7 @@
 }
 
 .maintenance{
-  height: 100px;
+  height: 30px;
   max-width: 100%;
   width: auto;
   background-image: repeating-linear-gradient(45deg, yellow, rgb(126, 126, 0) 20px, rgb(31, 31, 31) 20px, black 40px);

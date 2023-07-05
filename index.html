@@ -75,7 +75,7 @@
       </nav>
       <section class="heightFull sectionOne">
           <img src="/assets/images/Logo.png" alt="Minha logo que ao pressionada revela uma breve biografia" id="imagem" onclick="rollImage()">
-          <div class="texto-escondido" id="texto">
+          <div class="texto-escondido" id="hiddenText">
             <p>Olá! Sou Daniel, e é um prazer recebê-lo em meu site. Tenho 20 anos e desde 2020 tenho me dedicado ao estudo e prática na área de programação. Foi nesse ano, marcado pelo isolamento causado pela pandemia, que busquei novas formas de me entreter e mergulhei ainda mais na minha paixão pela computação e tecnologia em geral. Desde os meus 6 anos, quando comecei a usar computadores e jogar meus primeiros jogos, esse mundo tem sido meu maior hobby.</p>
           
             <p>Ao longo dessa jornada, iniciei diversos projetos, incluindo a criação de jogos, sites, aplicativos e muito mais. Atualmente, estou cursando Ciência da Computação, o que me proporciona um amplo conhecimento e me prepara para atuar em diversas áreas.</p>
@@ -158,22 +158,22 @@ window.addEventListener('load', function() {
 });
 
 var imagem = document.getElementById("imagem");
-var texto = document.getElementById("texto");
+var hiddenText = document.getElementById("hiddenText");
 var imagemGirada = false;
 
 function rollImage() {
   if (!imagemGirada) {
-    imagem.style.transform = "translate(70%, -50%) rotate(360deg)";
-    texto.style.transform = "translate(10%, -50%)";
-    texto.style.transitionProperty = "transform, opacity";
-    texto.style.transitionDuration = "1.1s,1.5s";
+    imagem.style.transform = "translate(160%, -50%) rotate(360deg)";
+    hiddenText.style.transform = "translate(10%, -50%)";
+    hiddenText.style.transitionProperty = "transform, opacity";
+    hiddenText.style.transitionDuration = "1.1s,1.5s";
     imagemGirada = true;
-    texto.style.opacity = "1"; // Valor de opacidade desejado
+    hiddenText.style.opacity = "1"; // Valor de opacidade desejado
   } else {
     imagem.style.transform = "translate(-50%, -50%)";
-    texto.style.transform = "translate(-100%, -50%)";
+    hiddenText.style.transform = "translate(-100%, -50%)";
     imagemGirada = false;
-    texto.style.opacity = "0"; // Valor de opacidade desejado
+    hiddenText.style.opacity = "0"; // Valor de opacidade desejado
   }
 }
 
