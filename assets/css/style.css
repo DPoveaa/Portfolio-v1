@@ -142,3 +142,26 @@
   filter: brightness(10%);
   transition: filter 1s ease;
 }
+
+.container{
+  max-width: 100%;
+}
+
+.maintenance{
+  height: 100px;
+  max-width: 100%;
+  width: auto;
+  background-image: repeating-linear-gradient(45deg, yellow, rgb(126, 126, 0) 20px, rgb(31, 31, 31) 20px, black 40px);
+  opacity: 75%;
+}
+
+.maintenance-text {
+  color: whitesmoke;
+  font-size: 5rem;
+  -webkit-text-stroke: 2px black;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 100%;
+}
+
