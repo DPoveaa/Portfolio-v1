@@ -57,43 +57,47 @@
     border-color: black;
 }
 
-.titleSectionOne {
-    color: black;
-    font-size: 50px;
-    font-weight: 600px;
-}
-
 .card-img-top{
-    height: 10em;
+    height: 7vw;
+    width: 14.5vw;
+    border-radius: 1vw 1vw 0vw 0vw;
 }
 
 .card-text {
+  
     color: whitesmoke;
   display: -webkit-box;  
-    -webkit-line-clamp: 3; /* Define o número máximo de linhas que deseja exibir */
+    -webkit-line-clamp: 4; /* Define o número máximo de linhas que deseja exibir */
     -webkit-box-orient: vertical;
     overflow: hidden;
+    height: 6vw;
+    font-size: 1vw;
 }
 
 .card-title{
   color: whitesmoke;
+  height: 1.5vw;
+  font-size: 1vw;
 }
   
 .card{
-    width: 15.5%;
-    margin: 3% 0% 3% 17.25%;
-    padding: 0px;
-    border-radius: 10px;
-    border-width: 5px;
+    width: 15vw;
+    height: 20vw;
+    margin: 3vw 0vw 3vw 17.25vw;
+    padding: 0vw;
+    border-radius: 1vw;
+    border-width: 0.26vw;
     border-color: whitesmoke;
-    box-shadow: 0 0 0 4px black,
+    box-shadow: 0 0 0 0.2vw black,
     /* Cor da borda interna (branca) */
-    0 0 0 9px whitesmoke;
+    0 0 0 0.45vw whitesmoke;
 }
 
 .card-body{
   background-color: rgb(90, 90, 90);
-  border-radius: 0% 0% 5% 5%;
+  border-radius: 0vw 0vw 1vw 1vw;
+  height: 12vw;
+  width: 14.5vw;
 }
 
 .heightFull {
@@ -154,6 +158,8 @@
   color: whitesmoke;
   background-color: black;
   border-color: whitesmoke;
+  height: 2.25vw;
+  width: 12vw;
 }
 
 .btn.btn-primary:hover{
@@ -168,7 +174,7 @@
 }
 
 .container{
-  max-width: 100%;
+  max-width: 100vw;
 }
 
 .maintenance{
