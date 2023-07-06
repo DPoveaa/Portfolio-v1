@@ -8,6 +8,8 @@
     font-size: medium;
 }
 
+
+
 .navBrandText {
     color: whitesmoke;
     font-size: larger;
@@ -140,6 +142,12 @@
 
 .hiddenText p {
   font-size: 0.8vw; /* Tamanho de fonte responsivo em relação à largura da tela */
+}
+
+.btn.btn-outline-success.button:active {
+  color: whitesmoke;
+  background-color: black;
+  border-color: whitesmoke;
 }
 
 .btn.btn-primary{
