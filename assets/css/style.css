@@ -17,9 +17,24 @@
     color: whitesmoke
   }
 
-.nav-item {
-    padding: 0px 10px;
-}
+  .navbar-toggler {
+    color: whitesmoke;
+    border-color: whitesmoke;
+  }
+  
+  .navbar-toggler:hover {
+    color: black;
+    background-color: whitesmoke;
+    border-color: black;
+  }
+  
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(245,245,245, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  }
+  
+  .navbar-toggler:hover .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0,0,0, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  }
 
 .nav-link.textNav:hover {
     color: grey;
@@ -63,7 +78,7 @@
 }
   
 .card{
-    width: 18rem;
+    width: 15.5%;
     margin: 3% 0% 3% 17.25%;
     padding: 0px;
     border-radius: 10px;
@@ -80,18 +95,17 @@
 }
 
 .heightFull {
-    padding-top: 93%;
-    height: 700%;
+  min-height: 32vw;
+    
   }
   
   .sectionOne {
-    padding-top: 30%;
     background-color: grey;
     position: relative;
     border-bottom: 4px groove black;
   }
   
-  #imagem {
+  #imageToRoll {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -107,24 +121,26 @@
   opacity: 0.8;
 }
 
-  #hiddenText {
-    opacity: 0;
-    background-color: rgb(110, 110, 110);
-    border-radius: 3%;
-    font-size: 95%;
-    word-wrap: break-word;
-    color: whitesmoke;
-    position: absolute;
-    top: 50%;
-    transform: translate(-100%, -50%);
-    transition-property: transform, opacity;
-    transition-duration: 1.5s, 0.5s;
-    transition-timing-function: ease, ease;
-    z-index: 1; /* Ajuste o z-index para garantir que o texto fique abaixo da imagem */
-    max-width: 60%;
-    height: 90%;
-    padding: 1%;
-  }
+.hiddenText {
+  max-height: 30vw;
+  opacity: 0;
+  background-color: rgb(110, 110, 110);
+  color: whitesmoke;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transition-property: transform, opacity;
+  transition-duration: 1.5s, 0.5s;
+  transition-timing-function: ease, ease;
+  z-index: 1;
+  max-width: 60%;
+  padding: 0.8%;
+  overflow: auto;
+}
+
+.hiddenText p {
+  font-size: 0.8vw; /* Tamanho de fonte responsivo em relação à largura da tela */
+}
 
 .btn.btn-primary{
   color: whitesmoke;
