@@ -1,133 +1,185 @@
 <!DOCTYPE html>
-<html lang="pt-br" class = "fade-in" style="background-color: grey;">
+<html lang="pt-br" class="fade-in" style="background-color: grey;">
+
 <head>
   <link rel="stylesheet" href="./Prism/prism.css">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
 
-    <link rel="stylesheet" type="text/css" href="./assets/css/style.css" media="screen">
+  <link rel="stylesheet" type="text/css" href="./assets/css/style.css" media="screen">
 </head>
+
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #1f1f1f; padding: 0.5vw 30vw 0.5vw 16vw;">
-      <img src="./assets/images/Logo.png" style="width: 3vw; height: 3vw;"  type="button" href="#" alt="Logo" onclick="rollImage(), scrollToTop()">
-      <span style="display: inline-block;"></span>
-        <div class="container-fluid" style="width: 30vw; height: 1vw;">
-          <button class="navbar-toggler textNav" style="height: 3vw; width: 12vw; position: absolute;" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon" style="position: center;"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="width: 27vw;">
-              <li class="nav-item">
-                <a class="nav-link textNav" style="height: 1vw; width: 1vw; font-size: 1.2vw;" href="#" onclick="rollImage()">Sobre</a>
-              </li>
-              <li class="nav-item" style="margin-left: 4vw;">
-                <a class="nav-link textNav" style="height: 1vw; width: 1vw; font-size: 1.2vw;" href="#" onclick="scrollToGraduations()">Graduações</a>
-              </li>
-              <li class="nav-item" style="margin-left: 7vw;">
-                <a class="nav-link textNav" style="height: 1vw; width: 1vw; font-size: 1.2vw;" href="#">Portfólio</a>
-              </li>
-              <li class="nav-item dropdown" style="margin-left: 5vw; margin-right: 1vw; ">
-                <a class="nav-link dropdown-toggle textNav" style="font-size: 1.2vw;" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Contato
+  <nav class="navbar navbar-expand-lg navbar-light"
+    style="background-color: #1f1f1f; padding: 0.5% 25% 0.5% 25%; max-width: 100%;">
+    <div class="container-fluid">
+      <img src="./assets/images/Logo.png" style="width: 10vw; height: 10vw; max-width: 60px; max-height: 60px;"
+        type="button" href="#" alt="Logo" onclick="rollImage(), scrollToTop()">
+      <span style="display: inline-block; margin-left: 2vw;"></span>
+      <button class="navbar-toggler textNav" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link textNav" href="#" onclick="rollImage()">Sobre</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link textNav" href="#" onclick="scrollToGraduations()">Graduações</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link textNav" href="#">Portfólio</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle textNav" style="margin-right: 2vw;" href="#" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Contato
+            </a>
+            <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-item" style="color: black" target="_blank" href="https://github.com/DPoveaa">
+                  <img src="./assets/images/GitHubLogo.png" width="25vw" height="25vw" style="display: inline-block;"
+                    alt="Logo do GitHub">
+                  <span style="display: inline-block; margin-left: 0.1vw;">GitHub</span>
                 </a>
-                <ul class="dropdown-menu">
-                  <li>
-                    <a class="dropdown-item" style="color: black" target="_blank" href="https://github.com/DPoveaa">
-                    <img src="./assets/images/GitHubLogo.png" width="25vw" height="25vw" style="display: inline-block;" alt="Logo do GitHub">
-                    <span style="display: inline-block; margin-left: 0.1vw;">GitHub</span>
-                   </a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" style="color: black" target="_blank" href="mailto:danieldpcaires@gmail.com, danielpcaires@hotmail.com?subject=Curriculo%2FPortf%C3%B3lio&body=*Aten%C3%A7%C3%A3o%2C%20mensagem%20pr%C3%A9-definida%3A*%0D%0AOl%C3%A1%20a%20quem%20se%20interessou%20pelo%20meu%20trabalho%20e%20experi%C3%AAncias%20e%20seja%20bem-vindo.%0D%0APe%C3%A7o%20que%20se%20apresente%20e%20deixe%20claro%20a%20inten%C3%A7%C3%A3o%20de%20contato%20e%20em%20que%20posso%20auxiliar.%0D%0AAgrade%C3%A7o%20a%20aten%C3%A7%C3%A3o.%0D%0A-Ass%3A%20Povea.">
-                    <img src="./assets/images/Gmail.png" width="25vw" height="25vw" style="display: inline-block;" alt="Logo do Gmail">
-                    <span style="display: inline-block; margin-left: 0.1vw;">Gmail</span>
-                   </a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" style="color: black" target="_blank" href="https://www.linkedin.com/in/daniel-povea-507893222/">
-                      <img src="./assets/images/Linkedin.png" width="25vw" height="25vw" style="display: inline-block;" alt="Logo do Linkedin">
-                      <span style="display: inline-block; margin-left: 0.1vw;">Linkedin</span>
-                     </a>
-                  </li>                                 
-                  <li>
-                    <a class="dropdown-item" style="color: black" target="_blank" href="https://api.whatsapp.com/send?phone=5511998105896&text=*Aten%C3%A7%C3%A3o%2C%20mensagem%20pr%C3%A9-definida%3A*%0AOl%C3%A1%20a%20quem%20se%20interessou%20pelo%20meu%20trabalho%20e%20experi%C3%AAncias%20e%20seja%20bem-vindo.%0APe%C3%A7o%20que%20se%20apresente%20e%20deixe%20claro%20a%20inten%C3%A7%C3%A3o%20de%20contato%20e%20em%20que%20posso%20auxiliar.%0AAgrade%C3%A7o%20a%20aten%C3%A7%C3%A3o.%0A-Ass%3A%20Povea.">
-                    <img src="./assets/images/WhatsApp.png" width="25vw" height="25vw" style="display: inline-block;" alt="Logo do WhatsApp">
-                    <span style="display: inline-block; margin-left: 0.1vw;">WhatsApp</span>
-                   </a>
-                  </li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li>
-                    <a class="dropdown-item" style="color: black" target="_blank" href="#"> Dados para contato </a>
-                  </li>
-                </ul>
+              </li>
+              <li>
+                <a class="dropdown-item" style="color: black" target="_blank"
+                  href="mailto:danieldpcaires@gmail.com, danielpcaires@hotmail.com?subject=Curriculo%2FPortf%C3%B3lio&body=*Aten%C3%A7%C3%A3o%2C%20mensagem%20pr%C3%A9-definida%3A*%0D%0AOl%C3%A1%20a%20quem%20se%20interessou%20pelo%20meu%20trabalho%20e%20experi%C3%AAncias%20e%20seja%20bem-vindo.%0D%0APe%C3%A7o%20que%20se%20apresente%20e%20deixe%20claro%20a%20inten%C3%A7%C3%A3o%20de%20contato%20e%20em%20que%20posso%20auxiliar.%0D%0AAgrade%C3%A7o%20a%20aten%C3%A7%C3%A3o.%0D%0A-Ass%3A%20Povea.">
+                  <img src="./assets/images/Gmail.png" width="25vw" height="25vw" style="display: inline-block;"
+                    alt="Logo do Gmail">
+                  <span style="display: inline-block; margin-left: 0.1vw;">Gmail</span>
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" style="color: black" target="_blank"
+                  href="https://www.linkedin.com/in/daniel-povea-507893222/">
+                  <img src="./assets/images/Linkedin.png" width="25vw" height="25vw" style="display: inline-block;"
+                    alt="Logo do Linkedin">
+                  <span style="display: inline-block; margin-left: 0.1vw;">Linkedin</span>
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" style="color: black" target="_blank"
+                  href="https://api.whatsapp.com/send?phone=5511998105896&text=*Aten%C3%A7%C3%A3o%2C%20mensagem%20pr%C3%A9-definida%3A*%0AOl%C3%A1%20a%20quem%20se%20interessou%20pelo%20meu%20trabalho%20e%20experi%C3%AAncias%20e%20seja%20bem-vindo.%0APe%C3%A7o%20que%20se%20apresente%20e%20deixe%20claro%20a%20inten%C3%A7%C3%A3o%20de%20contato%20e%20em%20que%20posso%20auxiliar.%0AAgrade%C3%A7o%20a%20aten%C3%A7%C3%A3o.%0A-Ass%3A%20Povea.">
+                  <img src="./assets/images/WhatsApp.png" width="25vw" height="25vw" style="display: inline-block;"
+                    alt="Logo do WhatsApp">
+                  <span style="display: inline-block; margin-left: 0.1vw;">WhatsApp</span>
+                </a>
+              </li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li>
+                <a class="dropdown-item" style="color: black" target="_blank" href="#"> Dados para contato </a>
               </li>
             </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-3" style="background-color: white; border-color: whitesmoke; height: 2.5vw; width: 10vw; font-size: 1vw;" type="search" placeholder="O que procura?" aria-label="search">
-              <button class="btn btn-outline-success button" style="height: 2.5vw; width: 6vw; font-size: 1vw;" type="submit">Pesquisar</button>
-            </form>
-          </div>
-        </div>
-      </nav>
-      <section class="heightFull sectionOne">
-          <img src="/assets/images/Logo.png" alt="Minha logo que ao pressionada revela uma breve biografia" id="imageToRoll" onclick="rollImage()">
-          <div class="hiddenText" id="text">
-            <p>Olá! Sou Daniel, e é um prazer recebê-lo em meu site. Tenho 20 anos e desde 2020 tenho me dedicado ao estudo e prática na área de programação. Foi nesse ano, marcado pelo isolamento causado pela pandemia, que busquei novas formas de me entreter e mergulhei ainda mais na minha paixão pela computação e tecnologia em geral. Desde os meus 6 anos, quando comecei a usar computadores e jogar meus primeiros jogos, esse mundo tem sido meu maior hobby.<br><br>
-              Ao longo dessa jornada, iniciei diversos projetos, incluindo a criação de jogos, sites, aplicativos e muito mais. Atualmente, estou cursando Ciência da Computação, o que me proporciona um amplo conhecimento e me prepara para atuar em diversas áreas.<br><br>
-              Em 2023, participei de uma GameJam, minha primeira experiência em competições relacionadas à programação. Durante essa competição, pude sentir a pressão dos prazos e a necessidade de explorar novas áreas, como modelagem 3D, adição de efeitos sonoros, sincronização de animações com scripts e exportação de jogos. Essa experiência ampliou meus horizontes e me permitiu adquirir conhecimentos valiosos.<br><br>
-              Além da minha vida acadêmica, sou morador da cidade de São Paulo, capital. Tenho fluência em inglês e português (Brasil). Possuo amplo conhecimento em diversas áreas, como Photoshop, Premiere Pro, C#, JavaScript, Blender, Unity, GameMaker, entre outros.<br><br>
-              Minha ambição é adquirir conhecimentos em diversas áreas da tecnologia, com foco especial na programação. No entanto, também tenho interesse em explorar a área da robótica.<br><br>
-              Meu principal interesse profissional está no desenvolvimento de projetos e automações. Tenho paixão por essas áreas e estou sempre em busca de desafios empolgantes.<br><br>
-              Espero que aproveite este site tanto quanto eu me diverti criando-o. Se houver interesse em colaborar ou se tiver qualquer dúvida, não hesite em entrar em contato! Estou disponível para ajudar e discutir qualquer assunto em que eu possa contribuir.</p>                
-      </section>  
-      
-      <section style="background-color: gray;">
-        <div class="row" style="background-color: grey; max-width: 100%;">
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-3"
+            style="background-color: white; border-color: whitesmoke; height: 2.5vw; width: 10vw; font-size: 1vmax; padding: 0px; padding-left: 1.5vw; min-height: 20px; min-width: 76px;"
+            type="search" placeholder="O que procura?" aria-label="search">
+          <button class="btn btn-outline-success button"
+            style="height: 2.5vw; width: 6vw; min-height: 20px; min-width: 46px; font-size: 1vmax; padding: 0px;"
+            type="submit">Pesquisar</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <section class="heightFull sectionOne">
+    <img src="/assets/images/Logo.png" alt="Minha logo que ao pressionada revela uma breve biografia" id="imageToRoll"
+      onclick="rollImage()">
+    <div class="hiddenText" id="text">
+      <p>Olá! Sou Daniel, e é um prazer recebê-lo em meu site. Tenho 20 anos e desde 2020 tenho me dedicado ao estudo e
+        prática na área de programação. Foi nesse ano, marcado pelo isolamento causado pela pandemia, que busquei novas
+        formas de me entreter e mergulhei ainda mais na minha paixão pela computação e tecnologia em geral. Desde os
+        meus 6 anos, quando comecei a usar computadores e jogar meus primeiros jogos, esse mundo tem sido meu maior
+        hobby.<br><br>
+        Ao longo dessa jornada, iniciei diversos projetos, incluindo a criação de jogos, sites, aplicativos e muito
+        mais. Atualmente, estou cursando Ciência da Computação, o que me proporciona um amplo conhecimento e me prepara
+        para atuar em diversas áreas.<br><br>
+        Em 2023, participei de uma GameJam, minha primeira experiência em competições relacionadas à programação.
+        Durante essa competição, pude sentir a pressão dos prazos e a necessidade de explorar novas áreas, como
+        modelagem 3D, adição de efeitos sonoros, sincronização de animações com scripts e exportação de jogos. Essa
+        experiência ampliou meus horizontes e me permitiu adquirir conhecimentos valiosos.<br><br>
+        Além da minha vida acadêmica, sou morador da cidade de São Paulo, capital. Tenho fluência em inglês e português
+        (Brasil). Possuo amplo conhecimento em diversas áreas, como Photoshop, Premiere Pro, C#, JavaScript, Blender,
+        Unity, GameMaker, entre outros.<br><br>
+        Minha ambição é adquirir conhecimentos em diversas áreas da tecnologia, com foco especial na programação. No
+        entanto, também tenho interesse em explorar a área da robótica.<br><br>
+        Meu principal interesse profissional está no desenvolvimento de projetos e automações. Tenho paixão por essas
+        áreas e estou sempre em busca de desafios empolgantes.<br><br>
+        Espero que aproveite este site tanto quanto eu me diverti criando-o. Se houver interesse em colaborar ou se
+        tiver qualquer dúvida, não hesite em entrar em contato! Estou disponível para ajudar e discutir qualquer assunto
+        em que eu possa contribuir.</p>
+  </section>
+
+  <section style="background-color: gray;">
+    <div class="container">
+      <div class="grid">
           <div class="card">
             <img src="./assets/images/Projeto_Enigma.png" class="card-img-top" alt="Imagem do projeto Enigma da Twitch">
             <div class="card-body">
               <h5 class="card-title">Twitch Minigames</h5>
-              <p class="card-text">Utilizando uma base de dados pré-definida, o bot seleciona um enigma aleatório e o apresenta aos espectadores, desafiando-os a encontrar a solução correta. Os espectadores podem responder aos enigmas diretamente no chat, e o bot verifica se a resposta está correta, concedendo recompensas aos jogadores que acertarem. Essas recompensas podem variar desde pontos no canal até prêmios personalizados, como destaque no chat ou até mesmo brindes especiais.</p>
+              <p class="card-text">Utilizando uma base de dados pré-definida, o bot seleciona um enigma aleatório e o
+                apresenta aos espectadores, desafiando-os a encontrar a solução correta. Os espectadores podem responder
+                aos enigmas diretamente no chat, e o bot verifica se a resposta está correta, concedendo recompensas aos
+                jogadores que acertarem. Essas recompensas podem variar desde pontos no canal até prêmios
+                personalizados, como destaque no chat ou até mesmo brindes especiais.</p>
               <a href="#" class="btn btn-primary">Mais sobre...</a>
             </div>
           </div>
-          <div class="card" style="margin-left: 10%;">
-            <img src="./assets/images/GameJam-Aurora.png" class="card-img-top" alt="Imagem do projeto Aurora da GameJam">
+          <div class="card">
+            <img src="./assets/images/GameJam-Aurora.png" class="card-img-top"
+              alt="Imagem do projeto Aurora da GameJam">
             <div class="card-body">
               <h5 class="card-title">GameJam-Aurora</h5>
-              <p class="card-text">Primeira GameJam em que participei, independente de termos ganho, a quantidade de aprendizado e novas funções que tive que aprender foram imensas.</p>
+              <p class="card-text">Primeira GameJam em que participei, independente de termos ganho, a quantidade de
+                aprendizado e novas funções que tive que aprender foram imensas.</p>
               <a href="#" class="btn btn-primary">Mais sobre...</a>
             </div>
           </div>
-          <div class="card" style="margin-left: 10%;">
+          <div class="card">
             <img src="./assets/images/GPT_Bot_2.png" class="card-img-top" alt="Imagem do projeto Discord Bot">
             <div class="card-body">
               <h5 class="card-title">Discord chatbot com GPT</h5>
-              <p class="card-text">Algo que se tornou incrivelmente útil para mim e meu ciclo de amizades, porém a API tem seus limites de uso, o que acabou por interromper parcialmente o andamento do projeto.</p>
+              <p class="card-text">Algo que se tornou incrivelmente útil para mim e meu ciclo de amizades, porém a API
+                tem seus limites de uso, o que acabou por interromper parcialmente o andamento do projeto.</p>
               <a href="#" class="btn btn-primary">Mais sobre...</a>
               <!-- onclick="window.location.href = 'projects.html';" -->
             </div>
           </div>
         </div>
-      </section>
-       
-           
-        <div class="maintenance">
-          <h1 class="maintenance-text"> Em Andamento!</h1>
-        </div>
+      </div>
+    </div>
 
-      </section>
       <div class="container">
-        <div class="row">
-          <div class="col-md-8">
-            <h2>Meu Projeto</h2>
-            <p>Aqui está o código do meu projeto:</p>
-            <pre><code class="language-javascript">{
-              <!-- Seu código aqui... -->
+    <div class="grid">
+    </div>
+  
+  </section>
+
+
+  <div class="maintenance" content="width=device-width, initial-scale=1.0">
+    <h1 class="maintenance-text"> Em Progresso!</h1>
+  </div>
+
+  </section>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8">
+        <h2>Meu Projeto</h2>
+        <p>Aqui está o código do meu projeto:</p>
+        <pre><code class="language-javascript">{
+            
               window.addEventListener('load', function() {
                 var fadeIns = document.getElementsByClassName("fade-in");
               
@@ -136,56 +188,59 @@
                 }
               });}
             </code></pre>
-          </div>
-        </div>
       </div>
-    
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
-      <script src="./Prism/prism.js"></script>
-     <script>      
-window.addEventListener('load', function() {
-  var fadeIns = document.getElementsByClassName("fade-in");
+    </div>
+  </div>
 
-  for (var i = 0; i < fadeIns.length; i++) {
-    fadeIns[i].style.filter = "brightness(100%)";
-  }
-});
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+  <script src="./Prism/prism.js"></script>
+  <script>
+    window.addEventListener('load', function () {
+      var fadeIns = document.getElementsByClassName("fade-in");
 
-var image = document.getElementById("imageToRoll");
-var text = document.getElementById("text");
-var imageRolled = false;
+      for (var i = 0; i < fadeIns.length; i++) {
+        fadeIns[i].style.filter = "brightness(100%)";
+      }
+    });
 
-function rollImage() {
-  if (!imageRolled) {
-    image.style.transform = "translate(160%, -50%) rotate(360deg)";
-    text.style.transform = "translate(10%, -50%)";
-    text.style.transitionProperty = "transform, opacity";
-    text.style.transitionDuration = "1.1s,1.5s";
-    imageRolled = true;
-    text.style.opacity = "1"; // Valor de opacidade desejado
-  } else {
-    image.style.transform = "translate(-50%, -50%)";
-    text.style.transform = "translate(-100%, -50%)";
-    imageRolled = false;
-    text.style.opacity = "0"; // Valor de opacidade desejado
-  }
-}
+    var image = document.getElementById("imageToRoll");
+    var text = document.getElementById("text");
+    var imageRolled = false;
 
-function scrollToTop() {
-  window.scrollTo({
-    top: 0,
-    behavior: 'smooth'
-  });
-}
+    function rollImage() {
+      if (!imageRolled) {
+        image.style.transform = "translate(160%, -50%) rotate(360deg)";
+        text.style.transform = "translate(10%, -50%)";
+        text.style.transitionProperty = "transform, opacity";
+        text.style.transitionDuration = "1.1s,1.5s";
+        imageRolled = true;
+        text.style.opacity = "1"; // Valor de opacidade desejado
+      } else {
+        image.style.transform = "translate(-50%, -50%)";
+        text.style.transform = "translate(-100%, -50%)";
+        imageRolled = false;
+        text.style.opacity = "0"; // Valor de opacidade desejado
+      }
+    }
 
-function scrollToGraduations() {
-  window.scrollTo({
-    top: 1000,
-    behavior: 'smooth'
-  });
-}
+    function scrollToTop() {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    }
 
-      </script>
-      
-    </body>
+    function scrollToGraduations() {
+      window.scrollTo({
+        top: 1000,
+        behavior: 'smooth'
+      });
+    }
+
+  </script>
+
+</body>
+
 </html>

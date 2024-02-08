@@ -3,12 +3,15 @@
     color:whitesmoke;
 }
 
+.collapse.navbar-collapse{
+  position: relative;
+
+}
+
 .textNav {
     color: whitesmoke;
     font-size: medium;
 }
-
-
 
 .navBrandText {
     color: whitesmoke;
@@ -70,6 +73,7 @@
     -webkit-line-clamp: 4; /* Define o número máximo de linhas que deseja exibir */
     -webkit-box-orient: vertical;
     overflow: hidden;
+    margin: 0 0 1vw 0;
     height: 6vw;
     font-size: 1vw;
     margin-bottom: 0vws;
@@ -79,24 +83,25 @@
   color: whitesmoke;
   height: 1.5vw;
   font-size: 1vw;
+  margin-bottom: 0.2vw;
 }
   
 .card{
     width: 15vw;
     height: 20vw;
-    margin: 3vw 0vw 3vw 17.25vw;
+    margin: 0px;
     padding: 0vw;
     border-radius: 1vw;
     border-width: 0.26vw;
     border-color: whitesmoke;
     box-shadow: 0 0 0 0.2vw black,
-    /* Cor da borda interna (branca) */
     0 0 0 0.45vw whitesmoke;
 }
 
 .card-body{
   background-color: rgb(90, 90, 90);
   border-radius: 0vw 0vw 1vw 1vw;
+  padding: 0.5vw 1vw 0.5vw 1vw;
   height: 12vw;
   width: 14.5vw;
 }
@@ -129,7 +134,7 @@
 }
 
 .hiddenText {
-  max-height: 30vw;
+  max-height: 100%;
   opacity: 0;
   background-color: rgb(110, 110, 110);
   color: whitesmoke;
@@ -146,7 +151,7 @@
 }
 
 .hiddenText p {
-  font-size: 0.8vw; /* Tamanho de fonte responsivo em relação à largura da tela */
+  font-size: 90%; /* Tamanho de fonte responsivo em relação à largura da tela */
 }
 
 .btn.btn-outline-success.button:active {
@@ -161,6 +166,10 @@
   border-color: whitesmoke;
   height: 2.25vw;
   width: 12vw;
+  min-width: 10%;
+  min-width: 10%;
+  font-size: 1vmax;
+  
 }
 
 .btn.btn-primary:hover{
@@ -172,27 +181,55 @@
 .fade-in {
   filter: brightness(10%);
   transition: filter 1s ease;
+  height: 100%;
+  width: 100%;
 }
 
-.container{
-  max-width: 100vw;
+.container-fluid{
+  display: flex;
+  align-items: center;
 }
 
-.maintenance{
-  height: 30px;
+.maintenance {
+  height: min(3.5vw, 10vw);
   max-width: 100%;
   width: auto;
   background-image: repeating-linear-gradient(45deg, yellow, rgb(126, 126, 0) 20px, rgb(31, 31, 31) 20px, black 40px);
-  opacity: 75%;
+  opacity: 0.75;
 }
+
 
 .maintenance-text {
   color: whitesmoke;
-  font-size: 5rem;
-  -webkit-text-stroke: 2px black;
+  font-size: 2.5vw;
+  -webkit-text-stroke: 0.05em black;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
   max-width: 100%;
+  max-height: 100%;
+  margin: 0px;
 }
 
+.grid {
+  display: flex !important;
+  flex-wrap: wrap;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  gap: 150px;
+  width: 100%;
+  height: 100%;
+  padding-top: 100px;
+}
+
+.grid>div {
+  max-width: 400px;
+  max-height: 417px;
+  min-height: 25%;
+}
+
+.container {
+  max-width: 100%;
+  max-height: 100%;
+}
