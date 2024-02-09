@@ -60,51 +60,6 @@
     border-color: black;
 }
 
-.card-img-top{
-    height: 7vw;
-    width: 14.5vw;
-    border-radius: 1vw 1vw 0vw 0vw;
-}
-
-.card-text {
-  
-    color: whitesmoke;
-  display: -webkit-box;  
-    -webkit-line-clamp: 4; /* Define o número máximo de linhas que deseja exibir */
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    margin: 0 0 1vw 0;
-    height: 6vw;
-    font-size: 1vw;
-    margin-bottom: 0vws;
-}
-
-.card-title{
-  color: whitesmoke;
-  height: 1.5vw;
-  font-size: 1vw;
-  margin-bottom: 0.2vw;
-}
-  
-.card{
-    width: 15vw;
-    height: 20vw;
-    margin: 0px;
-    padding: 0vw;
-    border-radius: 1vw;
-    border-width: 0.26vw;
-    border-color: whitesmoke;
-    box-shadow: 0 0 0 0.2vw black,
-    0 0 0 0.45vw whitesmoke;
-}
-
-.card-body{
-  background-color: rgb(90, 90, 90);
-  border-radius: 0vw 0vw 1vw 1vw;
-  padding: 0.5vw 1vw 0.5vw 1vw;
-  height: 12vw;
-  width: 14.5vw;
-}
 
 .heightFull {
   min-height: 32vw;
@@ -160,17 +115,6 @@
   border-color: whitesmoke;
 }
 
-.btn.btn-primary{
-  color: whitesmoke;
-  background-color: black;
-  border-color: whitesmoke;
-  height: 2.25vw;
-  width: 12vw;
-  min-width: 10%;
-  min-width: 10%;
-  font-size: 1vmax;
-  
-}
 
 .btn.btn-primary:hover{
   color: black;
@@ -213,14 +157,14 @@
 
 .grid {
   display: flex !important;
-  flex-wrap: wrap;
+  flex-wrap: wrap; /* Permite que os itens do grid quebrem para a próxima linha */
   flex: 1;
   justify-content: center;
   align-items: center;
-  gap: 150px;
+  gap: 15vw;
   width: 100%;
   height: 100%;
-  padding-top: 100px;
+  padding-top: 10vw;
 }
 
 .grid>div {
@@ -232,4 +176,53 @@
 .container {
   max-width: 100%;
   max-height: 100%;
+}
+
+.card-img-top {
+  border-radius: 1vw 1vw 0vw 0vw;
+  max-height: 6vw;
+}
+
+.card-title {
+  color: whitesmoke;
+  font-size: 1vw;
+  margin-bottom: 0.2vw;
+}
+
+.card-text {
+  color: whitesmoke;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  margin: 0 0 1vw 0;
+  font-size: 0.8vw;
+  margin-bottom: 1vw; 
+}
+
+.card {
+  border-radius: 1vw;
+  border-width: 0.26vw;
+  border-color: whitesmoke;
+  box-shadow: 0 0 0 0.2vw black, 0 0 0 0.45vw whitesmoke;
+  height: 20vw;
+  width: 15vw;
+}
+
+.card-body {
+  background-color: rgb(90, 90, 90);
+  border-radius: 0vw 0vw 1vw 1vw;
+  padding: 0.5vw 1vw 1.5vw 1vw;
+  
+}
+
+
+.btn.btn-primary {
+  color: whitesmoke;
+  font-size: min(1vw, 5vw);
+  background-color: black;
+  border-color: whitesmoke;
+  height: 2.5vw;
+  width: 100%;
+  padding: 0.5vw 0 0 0;
 }
