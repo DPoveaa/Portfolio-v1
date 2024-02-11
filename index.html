@@ -10,6 +10,7 @@
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 
   <link rel="stylesheet" type="text/css" href="./assets/css/style.css" media="screen">
 </head>
@@ -94,6 +95,9 @@
       </div>
     </div>
   </nav>
+
+  <!-- Texto por tras da logo -->
+
   <section class="heightFull sectionOne">
     <img src="/assets/images/Logo.png" alt="Minha logo que ao pressionada revela uma breve biografia" id="imageToRoll"
       onclick="rollImage()">
@@ -121,27 +125,77 @@
         tiver qualquer dúvida, não hesite em entrar em contato! Estou disponível para ajudar e discutir qualquer assunto
         em que eu possa contribuir.</p>
   </section>
-  <div class="teste">
+
+  <!-- Livro portifólio -->
+
+  <section>
     <div class="book-container">
+      <input type="checkbox" id="checkbox-cover">
+      <input type="checkbox" id="checkbox-page1">
+      <input type="checkbox" id="checkbox-page2">
+      <input type="checkbox" id="checkbox-page3">
       <div class="book">
-        <div class="cover"></div>
-        <div class="page"></div>
-        <div class="page"></div>
-        <div class="page"></div>
-        <div class="page"></div>
-        <div class="last-page">
-          <img src="./assets/images/Logo.png">
-          <h2>Povea</h2>
+        <div class="cover">
+          <label for="checkbox-cover"></label>
+        </div>
+        <div class="page" id="page1">
+          <div class="front-page">
+            <h2 class="page-title">Page 1</h2>
+            <p class="page-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil magni laudantium beatae
+              quia. Recusandae,
+              fuga quas consectetur perferendis aperiam esse velit veniam ducimus? Quisquam consequatur perferendis
+              quidem
+              quia, recusandae ab!</p>
+            <label class="next" for="checkbox-page1"><i class="fas fa-chevron-right"></i></label>
+          </div>
+          <div class="back-page">
+            <img src="./assets/images/Projeto_Enigma.png">
+            <label class="prev" for="checkbox-page1"><i class="fas fa-chevron-left"></i></label>
+          </div>
+        </div>
+        <div class="page" id="page2">
+          <div class="front-page">
+            <h2 class="page-title">-Minigames na Twitch-</h2>
+            <p class="page-text">Utilizando uma base de dados pré-definida, o bot seleciona um enigma aleatório e o apresenta aos espectadores, desafiando-os a encontrar a solução correta. Os espectadores podem responder aos enigmas diretamente no chat, e o bot verifica se a resposta está correta, concedendo recompensas aos jogadores que acertarem. Essas recompensas podem variar desde pontos no canal até prêmios personalizados, como destaque no chat ou até mesmo brindes especiais.</p>
+            <label class="next" for="checkbox-page2"><i class="fas fa-chevron-right"></i></label>
+            <h1 class="page-number">2</h1z>
+          </div>
+          <div class="back-page">
+            <img src="./assets/images/GameJam-Aurora.png">
+            <label class="prev" for="checkbox-page2"><i class="fas fa-chevron-left"></i></label>
+          </div>
+        </div>
+        <div class="page" id="page3">
+          <div class="front-page">
+            <h2 class="page-title">-GameJam: Projeto Aurora-</h2>
+            <p class="page-text">Primeira GameJam em que participei, independente de termos ganho, a quantidade de aprendizado e novas funções que tive que aprender foram imensas.!</p>
+            <label class="next" for="checkbox-page3"><i class="fas fa-chevron-right"></i></label>
+            <h1 class="page-number">3</h1z>
+          </div>
+          <div class="back-page">
+            <img src="./assets/images/GPT_Bot_2.png">
+            <label class="prev" for="checkbox-page3"><i class="fas fa-chevron-left"></i></label>
+          </div>
+        </div>
+        <div class="page" id="page4">
+          <div class="front-page"> 
+            <h2 class="page-title">-Chatbot no Discord usando Chat GPT3-</h2>
+            <p class="page-text">Algo que se tornou incrivelmente útil para mim e meu ciclo de amizades, porém a API tem seus limites de uso, o que acabou por interromper o andamento do projeto.</p>
+            <h1 class="page-number">4</h1z>
+          </div>  
         </div>
         <div class="back-cover"></div>
       </div>
-    </div>
-  </div>
+  </section>
+
+  <!-- Faixa de manutenção -->
+
   <div class="maintenance" content="width=device-width, initial-scale=1.0">
     <h1 class="maintenance-text"> Em Progresso!</h1>
   </div>
 
-  </section>
+  <!-- Projetos detalhados -->
+
   <div class="container">
     <div class="row">
       <div class="col-md-8">
@@ -160,6 +214,10 @@
       </div>
     </div>
   </div>
+  </div>
+
+
+  <!-- Scripts -->
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
@@ -207,6 +265,47 @@
         behavior: 'smooth'
       });
     }
+
+
+    document.getElementById('checkbox-cover').addEventListener('change', function () {
+      if (!this.checked && (document.getElementById('checkbox-page1').checked)) {
+        // Aumentar o delay de transição dos elementos
+        document.querySelectorAll('.book .cover').forEach(element => {
+          element.style.transitionDuration = '1.2s'; // Ajuste o valor conforme necessário
+          element.style.zIndex = '0';
+        });
+
+        document.querySelectorAll('.book #page1').forEach(element => {
+          element.style.transitionDuration = '1s'; // Ajuste o valor conforme necessário
+        });
+
+        document.querySelectorAll('.book #page2').forEach(element => {
+          element.style.transitionDuration = '0.8s'; // Ajuste o valor conforme necessário
+        });
+
+        document.querySelectorAll('.book #page3').forEach(element => {
+          element.style.transitionDuration = '0.6s'; // Ajuste o valor conforme necessário
+        });
+
+
+        // Fechar os elementos após o delay
+        setTimeout(() => {
+          document.querySelectorAll('.book .cover, .book .page').forEach(element => {
+            element.style.zIndex = ''; // Restaura o valor do zIndex
+            element.style.transitionDuration = '';
+          });
+        }, 300); // Ajuste o valor do atraso conforme necessário para corresponder ao valor do transition-delay
+
+        // Desmarcar o checkbox de capa e a página 1
+        document.getElementById('checkbox-cover').checked = false;
+        document.getElementById('checkbox-page1').checked = false;
+        document.getElementById('checkbox-page2').checked = false;
+        document.getElementById('checkbox-page3').checked = false;
+      }
+
+    });
+
+
 
   </script>
 
