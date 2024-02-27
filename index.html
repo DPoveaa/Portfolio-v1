@@ -16,8 +16,8 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light"
-    style="background-color: #1f1f1f; padding: 0.5% 25% 0.5% 25%; max-width: 100%;">
+  <nav class="navbar navbar-expand-lg navbar-light sticky-top"
+    style="background-color: #0F4C75; padding: 0.5% 25% 0.5% 25%; max-width: 100%;">
     <div class="container-fluid">
       <img src="./assets/images/Logo.png" style="width: 10vw; height: 10vw; max-width: 60px; max-height: 60px;"
         type="button" href="#" alt="Logo" onclick="rollImage(), scrollToTop()">
@@ -45,14 +45,14 @@
             </a>
             <ul class="dropdown-menu">
               <li>
-                <a class="dropdown-item" style="color: black" target="_blank" href="https://github.com/DPoveaa">
+                <a class="dropdown-item" style="color: #1B262C" target="_blank" href="https://github.com/DPoveaa">
                   <img src="./assets/images/GitHubLogo.png" width="25vw" height="25vw" style="display: inline-block;"
                     alt="Logo do GitHub">
                   <span style="display: inline-block; margin-left: 0.1vw;">GitHub</span>
                 </a>
               </li>
               <li>
-                <a class="dropdown-item" style="color: black" target="_blank"
+                <a class="dropdown-item" style="color: #1B262C" target="_blank"
                   href="mailto:danieldpcaires@gmail.com, danielpcaires@hotmail.com?subject=Curriculo%2FPortf%C3%B3lio&body=*Aten%C3%A7%C3%A3o%2C%20mensagem%20pr%C3%A9-definida%3A*%0D%0AOl%C3%A1%20a%20quem%20se%20interessou%20pelo%20meu%20trabalho%20e%20experi%C3%AAncias%20e%20seja%20bem-vindo.%0D%0APe%C3%A7o%20que%20se%20apresente%20e%20deixe%20claro%20a%20inten%C3%A7%C3%A3o%20de%20contato%20e%20em%20que%20posso%20auxiliar.%0D%0AAgrade%C3%A7o%20a%20aten%C3%A7%C3%A3o.%0D%0A-Ass%3A%20Povea.">
                   <img src="./assets/images/Gmail.png" width="25vw" height="25vw" style="display: inline-block;"
                     alt="Logo do Gmail">
@@ -60,7 +60,7 @@
                 </a>
               </li>
               <li>
-                <a class="dropdown-item" style="color: black" target="_blank"
+                <a class="dropdown-item" style="color: #1B262C" target="_blank"
                   href="https://www.linkedin.com/in/daniel-povea-507893222/">
                   <img src="./assets/images/Linkedin.png" width="25vw" height="25vw" style="display: inline-block;"
                     alt="Logo do Linkedin">
@@ -68,7 +68,7 @@
                 </a>
               </li>
               <li>
-                <a class="dropdown-item" style="color: black" target="_blank"
+                <a class="dropdown-item" style="color: #1B262C" target="_blank"
                   href="https://api.whatsapp.com/send?phone=5511998105896&text=*Aten%C3%A7%C3%A3o%2C%20mensagem%20pr%C3%A9-definida%3A*%0AOl%C3%A1%20a%20quem%20se%20interessou%20pelo%20meu%20trabalho%20e%20experi%C3%AAncias%20e%20seja%20bem-vindo.%0APe%C3%A7o%20que%20se%20apresente%20e%20deixe%20claro%20a%20inten%C3%A7%C3%A3o%20de%20contato%20e%20em%20que%20posso%20auxiliar.%0AAgrade%C3%A7o%20a%20aten%C3%A7%C3%A3o.%0A-Ass%3A%20Povea.">
                   <img src="./assets/images/WhatsApp.png" width="25vw" height="25vw" style="display: inline-block;"
                     alt="Logo do WhatsApp">
@@ -79,7 +79,7 @@
                 <hr class="dropdown-divider">
               </li>
               <li>
-                <a class="dropdown-item" style="color: black" target="_blank" href="#"> Dados para contato </a>
+                <a class="dropdown-item" style="color: #1B262C" target="_blank" href="#"> Dados para contato </a>
               </li>
             </ul>
           </li>
@@ -136,11 +136,15 @@
       <input type="checkbox" id="checkbox-page3">
       <input type="checkbox" id="checkbox-page4">
       <div class="book">
-        <div class="cover">
-          <label for="checkbox-cover"></label>
-          <h2 style=" position: absolute; top: 1vw;">-Portfólio de projetos-</h2>
-          <div class="back-page"></div>
-        </div>
+        <div class="cover" id="frontCover" style="backface-visibility:hidden; z-index: 11;">
+          <label for="checkbox-cover" style="z-index: 11;"></label>
+          <h2 style=" position: absolute; top: 1.5vw; font-size: 2.5vw;">-Portfólio de projetos-</h2>
+          <img style="position: absolute; top: 3vw; height: 45vw;" src="./assets/images/ImagemCapa.png">
+        </div> 
+        <div class="book">
+          <div class="cover">
+            <label for="checkbox-cover"></label>
+          </div> 
         <div class="page" id="page1">
           <div class="front-page">
             <h2 class="page-title">-Portfólio de projetos-</h2>
@@ -151,26 +155,26 @@
             <label class="next" for="checkbox-page1"><i class="fas fa-chevron-right"></i></label>
           </div>
           <div class="back-page">
-            <img src="./assets/images/Projeto_Enigma.png">
+            <img src="./assets/images/GameJam-Aurora.png">
             <label class="prev" for="checkbox-page1"><i class="fas fa-chevron-left"></i></label>
           </div>
         </div>
         <div class="page" id="page2">
           <div class="front-page">
-            <h2 class="page-title">-Minigames na Twitch-</h2>
-            <p class="page-text">Utilizando uma base de dados pré-definida, o bot seleciona um enigma aleatório e o apresenta aos espectadores, desafiando-os a encontrar a solução correta. Os espectadores podem responder aos enigmas diretamente no chat, e o bot verifica se a resposta está correta, concedendo recompensas aos jogadores que acertarem. Essas recompensas podem variar desde pontos no canal até prêmios personalizados, como destaque no chat ou até mesmo brindes especiais.</p>
+            <h2 class="page-title">-GameJam: Projeto Aurora-</h2>
+            <p class="page-text">Primeira GameJam em que participei, independente de termos ganho, a quantidade de aprendizados e novas funções que tive que aprender foram imensas!</p>
             <label class="next" for="checkbox-page2"><i class="fas fa-chevron-right"></i></label>
             <h1 class="page-number">1</h1z>
           </div>
           <div class="back-page">
-            <img src="./assets/images/GameJam-Aurora.png">
+            <img src="./assets/images/Projeto_Enigma.png">
             <label class="prev" for="checkbox-page2"><i class="fas fa-chevron-left"></i></label>
           </div>
         </div>
         <div class="page" id="page3">
           <div class="front-page">
-            <h2 class="page-title">-GameJam: Projeto Aurora-</h2>
-            <p class="page-text">Primeira GameJam em que participei, independente de termos ganho, a quantidade de aprendizado e novas funções que tive que aprender foram imensas.!</p>
+            <h2 class="page-title">-Minigames na Twitch-</h2>
+            <p class="page-text">Utilizando uma base de dados pré-definida, o bot seleciona um enigma aleatório e o apresenta aos espectadores, desafiando-os a encontrar a solução correta. Os espectadores podem responder aos enigmas diretamente no chat, e o bot verifica se a resposta está correta, concedendo recompensas aos jogadores que acertarem. Essas recompensas podem variar desde pontos no canal até prêmios personalizados, como destaque no chat ou brindes especiais.</p>
             <label class="next" for="checkbox-page3"><i class="fas fa-chevron-right"></i></label>
             <h1 class="page-number">2</h1z>
           </div>
@@ -296,6 +300,9 @@
             element.style.zIndex = ''; // Restaura o valor do zIndex
             element.style.transitionDuration = '';
           });
+
+          document.getElementById('frontCover').style.zIndex = '11';
+
         }, 300); // Ajuste o valor do atraso conforme necessário para corresponder ao valor do transition-delay
 
         // Desmarcar o checkbox de capa e a página 1

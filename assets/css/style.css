@@ -1,5 +1,9 @@
+body{
+  background-color: #1B262C;
+}
+
 .backgroundColorNav {
-  background-color: black;
+  background-color: #1B262C;
   color: whitesmoke;
 }
 
@@ -13,6 +17,10 @@
   font-size: medium;
 }
 
+.textNav:active{
+  color: #BBE1FA;
+}
+
 .navBrandText {
   color: whitesmoke;
   font-size: larger;
@@ -20,7 +28,7 @@
 }
 
 .nav-link.textNav:focus {
-  color: whitesmoke
+  color: #BBE1FA
 }
 
 .navbar-toggler {
@@ -29,9 +37,9 @@
 }
 
 .navbar-toggler:hover {
-  color: black;
-  background-color: whitesmoke;
-  border-color: black;
+  color: #1B262C;
+  background-color: #3282B8;
+  border-color: #1B262C;
 }
 
 .navbar-toggler-icon {
@@ -43,11 +51,11 @@
 }
 
 .nav-link.textNav:hover {
-  color: grey;
+  color: #3282B8;
 }
 
 .nav-link.dropdown-toggle.textNav:hover {
-  color: grey;
+  color: #3282B8;
 }
 
 .button {
@@ -56,9 +64,9 @@
 }
 
 .button:hover {
-  color: black;
+  color: #1B262C;
   background-color: whitesmoke;
-  border-color: black;
+  border-color: #1B262C;
 }
 
 
@@ -68,9 +76,9 @@
 }
 
 .sectionOne {
-  background-color: grey;
+  background-color: #1B262C;
   position: relative;
-  border-bottom: 4px groove black;
+  border-bottom: 4px groove #1B262C;
 }
 
 #imageToRoll {
@@ -94,10 +102,11 @@
 .hiddenText {
   max-height: 100%;
   opacity: 0;
-  background-color: rgb(110, 110, 110);
+  background-color: #3282B8;
   color: whitesmoke;
   position: absolute;
   top: 50%;
+  border-radius: 1vw;
   transform: translate(-50%, -50%);
   transition-property: transform, opacity;
   transition-duration: 1.5s, 0.5s;
@@ -115,15 +124,15 @@
 
 .btn.btn-outline-success.button:active {
   color: whitesmoke;
-  background-color: black;
+  background-color: #3282B8;
   border-color: whitesmoke;
 }
 
 
 .btn.btn-primary:hover {
-  color: black;
+  color: #1B262C;
   background-color: whitesmoke;
-  border-color: black;
+  border-color: #1B262C;
 }
 
 .fade-in {
@@ -142,14 +151,14 @@
   height: min(3.5vw, 10vw);
   max-width: 100%;
   width: auto;
-  background-image: repeating-linear-gradient(45deg, yellow, rgb(126, 126, 0) 20px, rgb(31, 31, 31) 20px, black 40px);
+  background-image: repeating-linear-gradient(45deg, yellow, rgb(126, 126, 0) 20px, rgb(31, 31, 31) 20px, #1B262C 40px);
   opacity: 0.75;
 }
 
 .maintenance-text {
   color: whitesmoke;
   font-size: 2.5vw;
-  -webkit-text-stroke: 0.05em black;
+  -webkit-text-stroke: 0.05em #1B262C;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
@@ -162,7 +171,7 @@
 
 .book-container {
   font-family: "Poppin", sans-serif;
-  background-color: #2e3537;
+  background-color: #1B262C;
   height: 50vw;
   display: flex;
   align-items: center;
@@ -183,7 +192,7 @@ input {
 
 .cover,
 .back-cover {
-  background-color: rgb(110, 110, 110);
+  background-color: #3282B8;
   width: 100%;
   height: 100%;
   border-radius: 0 15px 15px 0;
@@ -192,6 +201,7 @@ input {
   align-items: center;
   justify-content: center;
   transform-origin: center left;
+  border-left: 1.5vw solid #0F4C75;
 }
 
 .cover {
@@ -246,6 +256,7 @@ input {
   font-size: 1vw;
   overflow: auto;
   height: 32vw;
+  font-family:sans-serif;
 }
 
 .page img {
@@ -255,6 +266,7 @@ input {
 }
 
 .front-page {
+  background-color: whitesmoke;
   position: absolute;
   width: 100%;
   height: 100%;
@@ -265,6 +277,7 @@ input {
 
 .back-page {
   transform: rotateY(180deg);
+  background-color: whitesmoke;
   position: absolute;
   width: 100%;
   height: 100%;
