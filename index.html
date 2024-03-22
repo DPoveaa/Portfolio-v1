@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="pt-br" class="fade-in" style="background-color: grey;">
 
+<!-- #region Head -->
+
 <head>
   <link rel="stylesheet" href="./Prism/prism.css">
   <meta charset="UTF-8">
@@ -15,7 +17,14 @@
   <link rel="stylesheet" type="text/css" href="./assets/css/style.css" media="screen">
 </head>
 
+<!-- #endregion Head-->
+
+<!--#region Body -->
+
 <body>
+
+  <!-- #region Navigation bar -->
+
   <nav class="navbar navbar-expand-lg navbar-light sticky-top"
     style="background-color: #0F4C75; padding: 0.5% 25% 0.5% 25%; max-width: 100%;">
     <div class="container-fluid">
@@ -96,7 +105,9 @@
     </div>
   </nav>
 
-  <!-- Texto por tras da logo -->
+  <!-- #endregion Navigation bar-->
+
+  <!-- #region Texto por tras da logo -->
 
   <section class="heightFull sectionOne">
     <img src="/assets/images/Logo.png" alt="Minha logo que ao pressionada revela uma breve biografia" id="imageToRoll"
@@ -126,11 +137,13 @@
         em que eu possa contribuir.</p>
   </section>
 
-  <!-- Livro portifólio -->
+  <!-- #endregion Texto por tras da logo -->
 
+  <!--#region Livro portifólio  -->
   <section>
     <div class="book-container">
       <input type="checkbox" id="checkbox-cover">
+      <input type="checkbox" id="checkbox-page0">
       <input type="checkbox" id="checkbox-page1">
       <input type="checkbox" id="checkbox-page2">
       <input type="checkbox" id="checkbox-page3">
@@ -139,68 +152,135 @@
         <div class="cover" id="frontCover" style="backface-visibility:hidden; z-index: 11;">
           <label for="checkbox-cover" style="z-index: 11;"></label>
           <h2 style=" position: absolute; top: 1.5vw; font-size: 2.5vw;">-Portfólio de projetos-</h2>
-          <img style="position: absolute; top: 3vw; height: 45vw;" src="./assets/images/ImagemCapa.png">
-        </div> 
+          <img style="position: absolute; top: 10vw; height: 23vw;" src="./assets/images/ImagemCapa.png">
+          <img style="position: absolute; top: 10vw; height: 23vw;" src="./assets/images/ImagemCapa.png">
+        </div>
         <div class="book">
           <div class="cover">
             <label for="checkbox-cover"></label>
-          </div> 
-        <div class="page" id="page1">
-          <div class="front-page">
-            <h2 class="page-title">-Portfólio de projetos-</h2>
-            <p class="page-text">Bem-vindo(a) ao meu livro em constante crescimento de projetos! Aqui, reúno todos os meus trabalhos, acompanhados por breves resumos.<br><br>
-               É como um registro vivo do meu percurso criativo e profissional, uma espécie de linha do tempo onde cada projeto conta uma história única do meu desenvolvimento pessoal.<br><br> 
-               Acredito sinceramente que essa é uma maneira bacana e até meio divertida de compartilhar o que tenho feito.<br><br>
-            </p>
-            <label class="next" for="checkbox-page1"><i class="fas fa-chevron-right"></i></label>
           </div>
-          <div class="back-page">
-            <img src="./assets/images/GameJam-Aurora.png">
-            <label class="prev" for="checkbox-page1"><i class="fas fa-chevron-left"></i></label>
+          <div class="page" id="page0">
+            <div class="front-page">
+              <h2 class="page-title">-Portfólio de projetos-</h2>
+              <p class="page-text">Bem-vindo(a) ao meu livro em constante crescimento de projetos! Aqui, reúno todos
+                os
+                meus trabalhos, acompanhados por breves resumos.<br><br>
+                É como um registro vivo do meu percurso criativo e profissional, uma espécie de linha do tempo onde
+                cada
+                projeto conta uma história única do meu desenvolvimento pessoal.<br><br>
+                Acredito sinceramente que essa é uma maneira bacana e até meio divertida de compartilhar o que tenho
+                feito.<br><br>
+              </p>
+              <label class="next" for="checkbox-page0"><i class="fas fa-chevron-right"></i></label>
+            </div>
+            <div class="back-page">
+              <label class="prev" for="checkbox-page0"><i class="fas fa-chevron-left"></i></label>
+            </div>
           </div>
+          <div class="page" id="page1">
+            <div class="front-page">
+              <h2 class="page-title">-Indice-</h2>
+              <p class="page-text">1. C#<br>
+                ㅤ1.1 Gamejam - Projeto Aurora<br>
+                <br>
+                2. Unity<br>
+                ㅤ2.1 Gamejam - Projeto Aurora<br>
+                <br>
+                3. Javascript<br>
+                ㅤ3.1 Minigames da Twitch<br>
+                ㅤ3.2 Chatbot no Discord usando Chat GPT3<br>
+                <br>
+                4. GameMaker<br>
+                ㅤ(Não foram fornecidos projetos específicos)<br>
+                <br>
+                5. Photoshop<br>
+                ㅤ(Não foram fornecidos projetos específicos)<br>
+                <br>
+                6. Premiere<br>
+                ㅤ(Não foram fornecidos projetos específicos)<br>
+                <br>
+                7. HTML<br>
+                ㅤ7.1 Minigames da Twitch<br>
+                ㅤ7.2 Chatbot no Discord usando Chat GPT3<br>
+                <br>
+                8. CSS<br>
+                ㅤ(Não foram fornecidos projetos específicos)<br>
+                <br>
+                9. Python<br>
+                ㅤ(Não foram fornecidos projetos específicos)<br>
+                <br>
+                10. Blender<br>
+                ㅤ10.1 Gamejam - Projeto Aurora<br>
+                <br>
+                11. Visual Studio<br>
+                ㅤ(Não foram fornecidos projetos específicos)<br>
+                <br>
+                12. Visual Studio Code<br>
+                ㅤ12.1 Gamejam - Projeto Aurora<br>
+                ㅤ12.2 Minigames da Twitch<br>
+                ㅤ12.3 Chatbot no Discord usando Chat GPT3<br>
+              </p>
+              <label class="next" for="checkbox-page1"><i class="fas fa-chevron-right"></i></label>
+            </div>
+            <div class="back-page">
+              <img src="./assets/images/GameJam-Aurora.png">
+              <label class="prev" for="checkbox-page1"><i class="fas fa-chevron-left"></i></label>
+            </div>
+          </div>
+          <div class="page" id="page2">
+            <div class="front-page">
+              <h2 class="page-title">-GameJam: Projeto Aurora-</h2>
+              <p class="page-text">Primeira GameJam em que participei, independente de termos ganho, a quantidade de
+                aprendizados e novas funções que tive que aprender foram imensas!</p>
+              <label class="next" for="checkbox-page2"><i class="fas fa-chevron-right"></i></label>
+              <h1 class="page-number">1</h1z>
+            </div>
+            <div class="back-page">
+              <img src="./assets/images/Projeto_Enigma.png">
+              <label class="prev" for="checkbox-page2"><i class="fas fa-chevron-left"></i></label>
+            </div>
+          </div>
+          <div class="page" id="page3">
+            <div class="front-page">
+              <h2 class="page-title">-Minigames na Twitch-</h2>
+              <p class="page-text">Utilizando uma base de dados pré-definida, o bot seleciona um enigma aleatório e o
+                apresenta aos espectadores, desafiando-os a encontrar a solução correta. Os espectadores podem
+                responder
+                aos enigmas diretamente no chat, e o bot verifica se a resposta está correta, concedendo recompensas
+                aos
+                jogadores que acertarem. Essas recompensas podem variar desde pontos no canal até prêmios
+                personalizados, como destaque no chat ou brindes especiais.</p>
+              <label class="next" for="checkbox-page3"><i class="fas fa-chevron-right"></i></label>
+              <h1 class="page-number">2</h1z>
+            </div>
+            <div class="back-page">
+              <img src="./assets/images/GPT_Bot_2.png">
+              <label class="prev" for="checkbox-page3"><i class="fas fa-chevron-left"></i></label>
+            </div>
+          </div>
+          <div class="page" id="page4">
+            <div class="front-page">
+              <h2 class="page-title">-Chatbot no Discord usando Chat GPT3-</h2>
+              <p class="page-text">Algo que se tornou incrivelmente útil para mim e meu ciclo de amizades, porém a API
+                tem seus limites de uso, o que acabou por interromper o andamento do projeto.</p>
+              <h1 class="page-number">3</h1z>
+            </div>
+          </div>
+          <div class="back-cover"></div>
         </div>
-        <div class="page" id="page2">
-          <div class="front-page">
-            <h2 class="page-title">-GameJam: Projeto Aurora-</h2>
-            <p class="page-text">Primeira GameJam em que participei, independente de termos ganho, a quantidade de aprendizados e novas funções que tive que aprender foram imensas!</p>
-            <label class="next" for="checkbox-page2"><i class="fas fa-chevron-right"></i></label>
-            <h1 class="page-number">1</h1z>
-          </div>
-          <div class="back-page">
-            <img src="./assets/images/Projeto_Enigma.png">
-            <label class="prev" for="checkbox-page2"><i class="fas fa-chevron-left"></i></label>
-          </div>
-        </div>
-        <div class="page" id="page3">
-          <div class="front-page">
-            <h2 class="page-title">-Minigames na Twitch-</h2>
-            <p class="page-text">Utilizando uma base de dados pré-definida, o bot seleciona um enigma aleatório e o apresenta aos espectadores, desafiando-os a encontrar a solução correta. Os espectadores podem responder aos enigmas diretamente no chat, e o bot verifica se a resposta está correta, concedendo recompensas aos jogadores que acertarem. Essas recompensas podem variar desde pontos no canal até prêmios personalizados, como destaque no chat ou brindes especiais.</p>
-            <label class="next" for="checkbox-page3"><i class="fas fa-chevron-right"></i></label>
-            <h1 class="page-number">2</h1z>
-          </div>
-          <div class="back-page">
-            <img src="./assets/images/GPT_Bot_2.png">
-            <label class="prev" for="checkbox-page3"><i class="fas fa-chevron-left"></i></label>
-          </div>
-        </div>
-        <div class="page" id="page4">
-          <div class="front-page"> 
-            <h2 class="page-title">-Chatbot no Discord usando Chat GPT3-</h2>
-            <p class="page-text">Algo que se tornou incrivelmente útil para mim e meu ciclo de amizades, porém a API tem seus limites de uso, o que acabou por interromper o andamento do projeto.</p>
-            <h1 class="page-number">3</h1z>
-          </div>  
-        </div>
-        <div class="back-cover"></div>
-      </div>
   </section>
 
-  <!-- Faixa de manutenção -->
+  <!--#endregion Livro portifólio-->
+
+  <!-- #region Faixa de manutenção -->
 
   <div class="maintenance" content="width=device-width, initial-scale=1.0">
     <h1 class="maintenance-text"> Em Progresso!</h1>
   </div>
 
-  <!-- Projetos detalhados -->
+  <!--#endregion Faixa de manutenção-->
+
+  <!-- #region Projetos detalhados -->
 
   <div class="container">
     <div class="row">
@@ -222,8 +302,9 @@
   </div>
   </div>
 
+  <!-- #endregion Projetos detalhados-->
 
-  <!-- Scripts -->
+  <!-- #region Scripts -->
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
@@ -274,23 +355,27 @@
 
 
     document.getElementById('checkbox-cover').addEventListener('change', function () {
-      if (!this.checked && (document.getElementById('checkbox-page1').checked)) {
+      if (!this.checked && (document.getElementById('checkbox-page0').checked)) {
         // Aumentar o delay de transição dos elementos
         document.querySelectorAll('.book .cover').forEach(element => {
           element.style.transitionDuration = '1.2s'; // Ajuste o valor conforme necessário
           element.style.zIndex = '0';
         });
 
-        document.querySelectorAll('.book #page1').forEach(element => {
+        document.querySelectorAll('.book #page0').forEach(element => {
           element.style.transitionDuration = '1s'; // Ajuste o valor conforme necessário
         });
 
-        document.querySelectorAll('.book #page2').forEach(element => {
+        document.querySelectorAll('.book #page1').forEach(element => {
           element.style.transitionDuration = '0.8s'; // Ajuste o valor conforme necessário
         });
 
-        document.querySelectorAll('.book #page3').forEach(element => {
+        document.querySelectorAll('.book #page2').forEach(element => {
           element.style.transitionDuration = '0.6s'; // Ajuste o valor conforme necessário
+        });
+
+        document.querySelectorAll('.book #page3').forEach(element => {
+          element.style.transitionDuration = '0.4s'; // Ajuste o valor conforme necessário
         });
 
 
@@ -307,6 +392,7 @@
 
         // Desmarcar o checkbox de capa e a página 1
         document.getElementById('checkbox-cover').checked = false;
+        document.getElementById('checkbox-page0').checked = false;
         document.getElementById('checkbox-page1').checked = false;
         document.getElementById('checkbox-page2').checked = false;
         document.getElementById('checkbox-page3').checked = false;
@@ -318,6 +404,10 @@
 
   </script>
 
+  <!-- #endregion Scripts-->
+
 </body>
+
+<!-- #endregion Body -->
 
 </html>
