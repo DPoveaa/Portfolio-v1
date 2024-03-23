@@ -235,6 +235,10 @@ input {
   background-size: auto;
 }
 
+.page-slider.active {
+  cursor: grabbing;
+  cursor: -webkit-grabbing;
+}
 
 .page-number {
   position: absolute;
@@ -260,15 +264,16 @@ input {
   text-align: justify;
   overflow-y: auto;
   height: 32vw;
-  max-height: 80%;
   font-family: sans-serif;
 }
 
 .page-useds {
   position: static;
-  margin-top: 3vw;
+  margin-top: 0.7vw;
   height: 2vw;
   width: 2vw;
+  max-width: 2vw;
+  max-height: 2vw;
 }
 
 
@@ -279,9 +284,11 @@ input {
 .useds-text {
   opacity: 0;
   transition-duration: 0.3s;
-  position: absolute;
+  position: relative;
   font-size: 1vw;
-  bottom: 2vw;
+  bottom: 3.2vw;
+  right: 0.7vw;
+  width: 4vw;
 }
 
 .back-page img {
@@ -328,6 +335,7 @@ input {
 
 .next {
   right: 1em;
+  z-index: 12;
 }
 
 .prev {

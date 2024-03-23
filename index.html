@@ -142,6 +142,7 @@
   <!--#region Livro portifólio  -->
   <section>
     <div class="book-container">
+      <!--#region Checkboxes  -->
       <input type="checkbox" id="checkbox-cover">
       <input type="checkbox" id="checkbox-page0">
       <input type="checkbox" id="checkbox-page1">
@@ -151,7 +152,10 @@
       <input type="checkbox" id="checkbox-page5">
       <input type="checkbox" id="checkbox-page6">
       <input type="checkbox" id="checkbox-page7">
+      <!--#endregion Checkboxes  -->
       <div class="book">
+
+        <!--#region Cover  -->
         <div class="cover" id="frontCover" style="backface-visibility:hidden; z-index: 11;">
           <label for="checkbox-cover" style="z-index: 11;"></label>
           <h2 style=" position: absolute; top: 1.5vw; font-size: 2.5vw;">-Portfólio de projetos-</h2>
@@ -162,6 +166,9 @@
           <div class="cover">
             <label for="checkbox-cover"></label>
           </div>
+          <!--#endregion Cover  -->
+
+          <!--#region Page0 Introdução -->
           <div class="page" id="page0">
             <div class="front-page">
               <h2 class="page-title">-Portfólio de projetos-</h2>
@@ -180,6 +187,9 @@
               <label class="prev" for="checkbox-page0"><i class="fas fa-chevron-left"></i></label>
             </div>
           </div>
+          <!--#endregion Page0  -->
+
+          <!--#region Page1 Indice -->
           <div class="page" id="page1">
             <div class="front-page">
               <h2 class="page-title">-Indice-</h2>
@@ -202,33 +212,30 @@
                 5. Photoshop<br>
                 ㅤ5.1 Gamejam - Projeto Aurora<br>
                 <br>
-                6. Premiere<br>
+                6. HTML<br>
+                ㅤ6.1 Minigames da Twitch<br>
+                ㅤ6.2 Buddy<br>
+                ㅤ6.3 AI Car<br>
+                <br>
+                7. CSS<br>
+                ㅤ7.1 AI Car <br>
+                <br>
+                8. Python<br>
                 ㅤ(Não foram fornecidos projetos específicos)<br>
                 <br>
-                7. HTML<br>
-                ㅤ7.1 Minigames da Twitch<br>
-                ㅤ7.2 Buddy<br>
-                ㅤ7.3 AI Car<br>
+                9. Blender<br>
+                ㅤ9.1 Gamejam - Projeto Aurora<br>
                 <br>
-                8. CSS<br>
-                ㅤ8.1 AI Car <br>
+                10. Visual Studio<br>
+                ㅤ10.1 Snow Hunting<br>
+                ㅤ10.2 Buddy<br>
+                ㅤ10.3 Jogo no console<br>
                 <br>
-                9. Python<br>
-                ㅤ(Não foram fornecidos projetos específicos)<br>
-                <br>
-                10. Blender<br>
-                ㅤ10.1 Gamejam - Projeto Aurora<br>
-                <br>
-                11. Visual Studio<br>
-                ㅤ11.1 Snow Hunting<br>
-                ㅤ11.2 Buddy<br>
-                ㅤ11.3 Jogo no console<br>
-                <br>
-                12. Visual Studio Code<br>
-                ㅤ12.1 Gamejam - Projeto Aurora<br>
-                ㅤ12.2 Minigames da Twitch<br>
-                ㅤ12.3 Chatbot no Discord usando Chat GPT3<br>
-                ㅤ12.4 AI Car<br>
+                11. Visual Studio Code<br>
+                ㅤ11.1 Gamejam - Projeto Aurora<br>
+                ㅤ11.2 Minigames da Twitch<br>
+                ㅤ11.3 Chatbot no Discord usando Chat GPT3<br>
+                ㅤ11.4 AI Car<br>
               </p>
               <label class="next" for="checkbox-page1"><i class="fas fa-chevron-right"></i></label>
             </div>
@@ -237,21 +244,34 @@
               <label class="prev" for="checkbox-page1"><i class="fas fa-chevron-left"></i></label>
             </div>
           </div>
+          <!--#endregion Page1  -->
+
+          <!--#region Page2 GameJam -->
           <div class="page" id="page2">
             <div class="front-page">
               <h2 class="page-title">-GameJam: Projeto Aurora-</h2>
               <p class="page-text">Primeira GameJam em que participei, independente de termos ganho, a quantidade de
                 aprendizados e novas funções que tive que aprender foram imensas!</p>
-              <img class="page-useds" src="./assets/images/Csharp.png">
-              <h1 class="useds-text" style="left: 0.2vw;">C Sharp</h1>
-              <img class="page-useds" src="./assets/images/Blender.png">
-              <h1 class="useds-text" style="left: 2.5vw;">Blender</h1>
-              <img class="page-useds" src="./assets/images/Photoshop.png">
-              <h1 class="useds-text" style="left: 4vw;">Photoshop</h1>
-              <img class="page-useds" src="./assets/images/Unity.png">
-              <h1 class="useds-text" style="left: 7.5vw;">Unity</h1>
-              <img class="page-useds" style="margin-right: 3vw;" src="./assets/images/VisualStudioCode.png">
-              <h1 class="useds-text" style="left: 8.9vw;">VS Code</h1>
+              <div style="position: relative; display: inline-block; max-width: 2vw;">
+                <img class="page-useds" src="./assets/images/Csharp.png" style="width: 100%;">
+                <h1 class="useds-text">C Sharp</h1>
+              </div>
+              <div style="position: relative; display: inline-block; max-width: 2vw;">
+                <img class="page-useds" src="./assets/images/Unity.png" style="width: 100%;">
+                <h1 class="useds-text" style="right: 0vw;">Unity</h1>
+              </div>
+              <div style="position: relative; display: inline-block; max-width: 2vw;">
+                <img class="page-useds" src="./assets/images/Blender.png" style="width: 100%;">
+                <h1 class="useds-text" style="right: 0.5vw;">Blender</h1>
+              </div>
+              <div style="position: relative; display: inline-block; max-width: 2vw;">
+                <img class="page-useds" src="./assets/images/Photoshop.png" style="width: 100%;">
+                <h1 class="useds-text" style="right: 1.25vw;">Photoshop</h1>
+              </div>
+              <div style="position: relative; display: inline-block; max-width: 2vw;">
+                <img class="page-useds" src="./assets/images/VisualStudioCode.png" style="width: 100%;">
+                <h1 class="useds-text" style="  width: 5vw; right: 1vw;">VS Code</h1>
+              </div>
               <label class="next" for="checkbox-page2"><i class="fas fa-chevron-right"></i></label>
               <h1 class="page-number">1</h1z>
             </div>
@@ -260,16 +280,28 @@
               <label class="prev" for="checkbox-page2"><i class="fas fa-chevron-left"></i></label>
             </div>
           </div>
+          <!--#endregion Page2  -->
+
+          <!--#region Page3 Minigames Twitch -->
           <div class="page" id="page3">
             <div class="front-page">
               <h2 class="page-title">-Minigames na Twitch-</h2>
               <p class="page-text">Utilizando uma base de dados pré-definida, o bot seleciona um enigma aleatório e o
-                apresenta aos espectadores, desafiando-os a encontrar a solução correta. Os espectadores podem
-                responder
-                aos enigmas diretamente no chat, e o bot verifica se a resposta está correta, concedendo recompensas
-                aos
+                apresenta aos espectadores, desafiando-os a encontrar a solução correta. <br>
+                <br>
+                Os espectadores podem responder aos enigmas diretamente no chat, e o bot verifica se a resposta está
+                correta, concedendo recompensas aos
                 jogadores que acertarem. Essas recompensas podem variar desde pontos no canal até prêmios
-                personalizados, como destaque no chat ou brindes especiais.</p>
+                personalizados, como destaque no chat ou brindes especiais.
+              </p>
+              <div style="position: relative; display: inline-block; max-width: 2vw;">
+                <img class="page-useds" src="./assets/images/JS.png" style="width: 100%;">
+                <h1 class="useds-text">JavaScript</h1>
+              </div>
+              <div style="position: relative; display: inline-block; max-width: 2vw;">
+                <img class="page-useds" src="./assets/images/VisualStudioCode.png" style="width: 100%;">
+                <h1 class="useds-text" style="  width: 5vw; right: 1vw;">VS Code</h1>
+              </div>
               <label class="next" for="checkbox-page3"><i class="fas fa-chevron-right"></i></label>
               <h1 class="page-number">2</h1z>
             </div>
@@ -278,15 +310,31 @@
               <label class="prev" for="checkbox-page3"><i class="fas fa-chevron-left"></i></label>
             </div>
           </div>
+          <!--#endregion Page3  -->
+
+          <!--#region Page4 Chatbot Discord com GPT3 -->
           <div class="page" id="page4">
             <div class="front-page">
               <h2 class="page-title">-Chatbot no Discord usando Chat GPT3-</h2>
               <p class="page-text">Algo que se tornou incrivelmente útil para mim e meu ciclo de amizades, porém a API
                 tem seus limites de uso, o que acabou por interromper o andamento do projeto.</p>
+              <div style="position: relative; display: inline-block; max-width: 2vw;">
+                <img class="page-useds" src="./assets/images/JS.png" style="width: 100%;">
+                <h1 class="useds-text">JavaScript</h1>
+              </div>
+              <div style="position: relative; display: inline-block; max-width: 2vw;">
+                <img class="page-useds" src="./assets/images/VisualStudioCode.png" style="width: 100%;">
+                <h1 class="useds-text" style="  width: 5vw; right: 1vw;">VS Code</h1>
+              </div>
               <h1 class="page-number">3</h1z>
+
             </div>
           </div>
+          <!--#endregion Page4  -->
+
+          <!--#region Back Cover  -->
           <div class="back-cover"></div>
+          <!--#endregion Cover  -->
         </div>
   </section>
 
@@ -326,11 +374,14 @@
 
   <!-- #region Scripts -->
 
+
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
     crossorigin="anonymous"></script>
   <script src="./Prism/prism.js"></script>
   <script>
+
     window.addEventListener('load', function () {
       var fadeIns = document.getElementsByClassName("fade-in");
 
@@ -411,13 +462,68 @@
         }, 300); // Ajuste o valor do atraso conforme necessário para corresponder ao valor do transition-delay
 
         // Desmarcar o checkbox de capa e a página 1
-        document.getElementById('checkbox-cover').checked = false;
-        document.getElementById('checkbox-page0').checked = false;
-        document.getElementById('checkbox-page1').checked = false;
-        document.getElementById('checkbox-page2').checked = false;
-        document.getElementById('checkbox-page3').checked = false;
+        document.querySelectorAll('[id^="checkbox-"]').forEach(checkbox => {
+          checkbox.checked = false;
+        });
+
       }
 
+    });
+
+    let isDown = false;
+    let startX;
+    let lastCheckedId = null;
+    let scrollLeft;
+
+    const slider = document.querySelector('.book');
+
+    slider.addEventListener('mousedown', (e) => {
+      document.querySelectorAll('[id^="checkbox"]').forEach(checkbox => {
+        if (checkbox.checked) {
+          lastCheckedId = checkbox.id;
+        }
+      });
+      isDown = true;
+      slider.classList.add('active');
+      startX = e.pageX - slider.offsetLeft;
+      scrollLeft = slider.scrollLeft;
+    });
+
+    slider.addEventListener('mouseleave', () => {
+      isDown = false;
+      slider.classList.remove('active');
+    });
+
+    slider.addEventListener('mouseup', () => {
+      isDown = false;
+      slider.classList.remove('active');
+    });
+
+    slider.addEventListener('mousemove', (e) => {
+      if (!isDown) return;
+      if (!document.getElementById('checkbox-cover').checked) return;
+      e.preventDefault();
+      const x = e.pageX - slider.offsetLeft;
+      const walk = x - startX;
+      const lastCheckbox = document.getElementById(lastCheckedId);
+      if (lastCheckbox) {
+        if (walk <= -20) {
+          let i = parseInt(lastCheckedId.replace('checkbox-page', '')) + 1;
+          if (lastCheckedId === 'checkbox-cover') {
+            i = 0; // Trata o checkbox-page0 corretamente
+          }
+          while (i <= 3) {
+            const nextCheckbox = document.getElementById('checkbox-page' + i);
+            if (nextCheckbox) {
+              nextCheckbox.checked = true;
+              break;
+            }
+            i++;
+          }
+        } else if (walk >= 20) {
+          lastCheckbox.checked = false;
+        }
+      }
     });
 
 
