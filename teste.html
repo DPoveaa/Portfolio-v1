@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Soma de Dois Números</title>
+    <script>
+        // Função para somar dois números
+        function soma(a, b) {
+            return a + b;
+        }
+
+        // Função para obter números do usuário e exibir o resultado
+        function calcularSoma() {
+            var numero1 = parseFloat(document.getElementById('numero1').value);
+            var numero2 = parseFloat(document.getElementById('numero2').value);
+            var resultado = soma(numero1, numero2);
+            document.getElementById('resultado').textContent = 'A soma de ' + numero1 + ' e ' + numero2 + ' é ' + resultado + '.';
+        }
+    </script>
+</head>
+<body>
+    <h1>Soma de Dois Números</h1>
+    <p>Digite dois números:</p>
+    <input type="number" id="numero1">
+    <input type="number" id="numero2">
+    <button onclick="calcularSoma()">Calcular Soma</button>
+    <p id="resultado"></p>
+</body>
+</html>
